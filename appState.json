@@ -1,0 +1,105 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "090a376a-66cd-4715-adbf-d09a1b60d4b4": {
+        "id": "090a376a-66cd-4715-adbf-d09a1b60d4b4",
+        "parent": null,
+        "name": "testqwe",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "b557a1df-8450-4d5b-8134-07b7f19f6d35"
+        ],
+        "isRemovable": false,
+        "filePath": "testqwe"
+      },
+      "b557a1df-8450-4d5b-8134-07b7f19f6d35": {
+        "id": "b557a1df-8450-4d5b-8134-07b7f19f6d35",
+        "parent": "090a376a-66cd-4715-adbf-d09a1b60d4b4",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "testqwe/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 1
+        },
+        "triggers": [
+          {
+            "resourceName": "pubsubcloudBuilds",
+            "config": {}
+          }
+        ]
+      },
+      "543a07d5-b74c-4100-a0b5-922c3dd4c8e3": {
+        "id": "543a07d5-b74c-4100-a0b5-922c3dd4c8e3",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.testqwefunction = require(\"./testqwe/function.js\").handler;"
+      },
+      "043a131f-c3d6-4f38-8e8c-3bc1bed51147": {
+        "id": "043a131f-c3d6-4f38-8e8c-3bc1bed51147",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "rootNode": "090a376a-66cd-4715-adbf-d09a1b60d4b4",
+    "openFiles": [
+      "b557a1df-8450-4d5b-8134-07b7f19f6d35"
+    ],
+    "currentFileId": "b557a1df-8450-4d5b-8134-07b7f19f6d35",
+    "resources": {
+      "pubsubcloudBuilds": {
+        "name": "pubsubcloudBuilds",
+        "type": "pubsub",
+        "config": {
+          "mode": 1,
+          "topic": {
+            "name": "cloud-builds",
+            "subscriptions": []
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "testqwe",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1568638071057
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "testqwe",
+      "url": "https://github.com/Indunil1992/testqwe"
+    }
+  }
+}
